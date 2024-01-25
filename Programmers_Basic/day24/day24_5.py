@@ -1,7 +1,5 @@
-def solution(date1, date2):
-    for i in range(3):
-        if date1[i] < date2[i]:
-            return 1
-        elif date2[i] < date1[i]:
-            return 0
-    return 0
+def solution(myString):
+    for i in myString:
+        if ord(i) < ord("l"):
+            myString = myString.replace(i, "l")
+    return myString

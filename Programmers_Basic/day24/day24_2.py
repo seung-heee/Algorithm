@@ -1,2 +1,11 @@
-def solution(str_list, ex):
-    return "".join([i for i in str_list if ex not in i])
+def solution(picture, k):
+    answer = []
+    for i in picture:
+        temp = ""
+
+        for j in i:
+            temp += j * k
+
+        for _ in range(k):
+            answer.append(temp)
+    return answer

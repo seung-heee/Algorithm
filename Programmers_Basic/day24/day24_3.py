@@ -1,2 +1,2 @@
-def solution(str_list, ex):
-    return "".join([i for i in str_list if ex not in i])
+def solution(arr, k):
+    return [i * k if k % 2 == 1 else i + k for i in arr]

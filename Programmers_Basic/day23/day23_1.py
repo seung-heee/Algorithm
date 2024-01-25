@@ -1,2 +1,2 @@
-def solution(n_str):
-    return str(int(n_str))
+def solution(str1, str2):
+    return int(str1 in str2)

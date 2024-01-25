@@ -1,2 +1,7 @@
-def solution(my_string, target):
-    return 1 if target in my_string else 0
+def solution(date1, date2):
+    for i in range(3):
+        if date1[i] < date2[i]:
+            return 1
+        elif date2[i] < date1[i]:
+            return 0
+    return 0
