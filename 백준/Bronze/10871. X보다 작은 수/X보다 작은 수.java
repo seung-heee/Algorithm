@@ -4,16 +4,15 @@ public class Main{
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
 		int X = sc.nextInt();
-		int[] Aarr = new int[N];
+		int[] A = new int[N];
 		
-		for (int i = 0; i < N; i++) {
+		for (int i = 0; i < A.length; i++) {
 			int a = sc.nextInt();
-			Aarr[i] = a;
+			A[i] = a;
 		}
 		
-		for (int i = 0; i < Aarr.length; i++) {
-			if (Aarr[i] < X) System.out.println(Aarr[i]);
+		for (int i = 0; i < A.length; i++) {
+			if(A[i] < X) System.out.println(A[i]);
 		}
-		
 	}
 }
